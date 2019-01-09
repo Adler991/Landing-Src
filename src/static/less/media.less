@@ -4,24 +4,49 @@
 	.preferences-center {
 		padding: 0 30px;
 	}
+
+	.work__title {
+		font-size: 4vw;
+	}
+
+	.work__left-side {
+		width: 33%;
+	}
 }
 
 
 
 
 @media only screen and (max-width: 1320px) {
-	.work {
-		.info {
-			&__item:nth-child(odd)::after { 
-				display: none;
-			}
-			&__item:nth-child(2)::after {
-				
-				display: none;
-			}
-		}
+	
+}
+
+
+@media only screen and (max-width: 1200px) {
+	.work .center {
+		flex-direction: column;
+		align-items: center;
+		padding: 0 45px;
+	}
+
+	.work__button {
+		margin-bottom: 70px;
+	}
+
+	.work__title {
+		font-size: 5.4vw;
+		text-align: center;
+	}
+
+	.work__left-side {
+		width: 90%;
+	}
+
+	.work--wr {
+		text-align: center;
 	}
 }
+
 
 @media only screen and (max-width: 1150px) {
 	.preferences {
@@ -67,27 +92,27 @@
 	.footer {
 
 		padding: 40px 0 20px;
-	 	
-		 	&__social {
-				margin: 0 auto 25px;
-			}
 
-			&__block {
-				margin-bottom: 20px;
-			}
+		&__social {
+			margin: 0 auto 25px;
+		}
 
-			&__links-block {
-				max-width: 100%;	
-			}
+		&__block {
+			margin-bottom: 20px;
+		}
 
-			&__title {
-				margin-bottom: 20px;	
-			}
-	 	}
+		&__links-block {
+			max-width: 100%;	
+		}
 
-		.footer-center {
-			padding-left: 30px;
-		} 	
+		&__title {
+			margin-bottom: 20px;	
+		}
+	}
+
+	.footer-center {
+		padding-left: 30px;
+	} 	
 
 }
 
@@ -137,17 +162,23 @@
 	.preferences__button-wr {
 		text-align: center;
 	}		
-		
+
 }
 
 
 @media only screen and (max-width: 850px) {
 	.work  {
-		& .center {
-			flex-direction: column;
-			align-items: center;
-		}   
-	
+		
+		.info {
+			&__item:nth-child(odd)::after { 
+				display: none;
+			}
+			&__item:nth-child(2)::after {
+				display: none;
+			}
+		}
+
+
 
 		padding-top: 0;
 		padding-bottom: 0;
@@ -161,9 +192,7 @@
 			margin-bottom: 40px;
 		}
 
-		&__button {
-			margin-bottom: 70px;
-		}
+		
 
 		&--wr {
 			text-align: center;
@@ -246,8 +275,8 @@
 }
 
 
- @media only screen and (max-width: 640px) {
- 	.section-title {
- 		line-height: 1.5;
- 	}
- }
+@media only screen and (max-width: 640px) {
+	.section-title {
+		line-height: 1.5;
+	}
+}
