@@ -15,9 +15,6 @@
     	.padding30
     }
 
-    @media only screen and (max-width: 650px) {
-		padding-bottom: 60px;
-	}
 }
 
 .logo-wr {
@@ -28,12 +25,6 @@
 		width: 100%;
 		height: auto;
 	}
-
-	@media only screen and (max-width: 950px) { 
-
-		margin-right: ~"calc(100% - 260px)";
-		margin-bottom: 20px;
-	 }
 }
 
 .header {
@@ -41,33 +32,18 @@
 	padding-bottom: 19px;
 	// padding-top: 20px;
 	margin-bottom: 130px;
-
-	@media only screen and (max-width: 650px) {
-		margin-bottom: 60px;
-	}
 }
 
 .nav {
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 20px;
-
-	 @media only screen and (max-width: 650px) { 
-
-		flex-direction: column;
-	 }
 }
 
 .nav__left-side {
 	display: flex;
 	padding-top: 8px;
 	align-items: flex-start;
-	
-	@media only screen and (max-width: 650px) { 
-
-		justify-content: center;
-	 }
-
 
 	& a {
 		display: block;
@@ -92,18 +68,11 @@
 		background: url(../img/help.svg) 14px 10px no-repeat;
 	}
 
-	& li a:hover {
-		color: #005173;
-
-		border: 2px solid #005173;
-		background-color: #ffffff;
+	& li:hover a {
+		transform: scale(1.05);
 	}
 
-	& li:first-child a:hover {
-		// padding-left: 40px;
 
-		background-image: url(../img/help-hover.svg);
-	}
 }
 
 .nav__right-side {
@@ -111,15 +80,6 @@
 	padding-top: 17px;
 	margin-left: auto;
 	justify-content: center;
-
-	@media only screen and (max-width: 650px) { 
-
-		margin-left: 0;
-	 }
-
-	/* & li {
-		display: inline-block;
-	} */
 		
 	& a {
 		display: block;
@@ -187,9 +147,9 @@
 		transition: all 0.15s linear 0s;
 	}
 
-	& a:hover {
-		text-decoration: underline;
-	}
+/* 	& a:hover {
+	text-decoration: underline;
+} */
 
 }
 
@@ -211,9 +171,9 @@
 		transition: all 0.15s linear 0s;
 	}
 
-	& a:hover {
+	/* & a:hover {
 		text-decoration: underline;
-	}
+	} */
 }
 
 .banner__button-wr {
@@ -238,15 +198,18 @@
 	transition: all 0.15s linear 0s;
 }
 
+.button:hover {
+	transform: scale(1.2);
+}
+
 .banner__button {
 	border: 2px solid @red-button;
 	background: @red-button;
-}
-
-.banner__button:hover {
-	
-	border: 2px solid #ffffff;
-	background: none;
 	transition: all 0.15s linear 0s;
 }
+
+
+
+
+
 
