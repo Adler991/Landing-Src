@@ -15,7 +15,7 @@
 
 	&__left-side {
 		padding-top: 46px;
-		width: 44.0972222222222%;
+		width: 50%;
 		// margin-right: 40px;
 	}
 
@@ -27,10 +27,6 @@
 		line-height: 1.25;
 		font-weight: 900;
 		color: #ffffff;
-
-		@media only screen and (max-width: 750px) {
-			font-size: 45px;
-		}
 	}
 
 	&__button {
@@ -40,8 +36,12 @@
 		border-radius: 6px;
 	}
 
-}
+	&__button:hover {
+		opacity: 1;
+		background-color: rgba(255, 255, 255, .3);
+	}
 
+}
 
 
 .work {
@@ -69,14 +69,14 @@
 			display: block;
 		}
 
-		&__item:nth-child(2n) {
+		&__item-right {
 
 			align-self: flex-end;
 
 			text-align: right;
 		}
 
-		&__item:nth-child(odd)::after {
+		&__item-left::after {
 
 			content:'';
 			position: absolute;
@@ -92,7 +92,7 @@
 
 		}
 
-		&__item:nth-child(2)::after {
+		&__item-second::after {
 
 			content:'';
 			position: absolute;
@@ -110,7 +110,7 @@
 
 
 
-		 &__item:nth-child(2) {
+		 &__item-second {
 			margin-bottom: 35px;
 		} 
 
@@ -124,30 +124,36 @@
 
 		}
 
-
-		&__item:nth-child(1)::before {
+		&__item:nth-child(odd)::before {
 			left: -80px;
 			top: -15px;
+		}
+
+		&__item:nth-child(even)::before {
+			right: -80px;
+			top: -15px;
+		}
+			
+
+		&__item-first::before {
+			
 
 			background: url('../img/work/icon1.png') center no-repeat;
 		}
 
-		&__item:nth-child(2)::before {
-			right: -80px;
-			top: -15px;
+		&__item-second::before {
+			
 			background: url('../img/work/icon2.png') center no-repeat;
 		}
 
-		&__item:nth-child(3)::before {
-			left: -80px;
-			top: -15px;
+		&__item-third::before {
+			
 
 			background: url('../img/work/icon3.png') center no-repeat;
 		}
 
-		&__item:nth-child(4)::before {
-			right: -80px;
-			top: -15px;
+		&__item-fourth::before {
+			
 
 			background: url('../img/work/icon4.png') center no-repeat;
 		}

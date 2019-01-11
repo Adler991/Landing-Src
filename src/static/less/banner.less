@@ -45,7 +45,7 @@
 	padding-top: 8px;
 	align-items: flex-start;
 
-	& a {
+	& .nav__link {
 		display: block;
 		padding: 9px 16px 9px;
 		margin-right: 10px;
@@ -62,14 +62,14 @@
 
 
 
-	& li:first-child a {
+	& .nav__first-item .nav__link {
 		padding-left: 40px;
 
 		background: url(../img/help.svg) 14px 10px no-repeat;
 	}
 
-	& li:hover a {
-		transform: scale(1.05);
+	& .nav__item:hover .nav__link {
+		background-color: rgba(255, 255, 255, 0.3);
 	}
 
 
@@ -81,7 +81,7 @@
 	margin-left: auto;
 	justify-content: center;
 		
-	& a {
+	.nav__right-side__link {
 		display: block;
 
 		font-family: @maven-font;
@@ -93,29 +93,24 @@
 	
 	}
 
-	& li:hover a {
+	 .nav__right-side__item:hover .nav__right-side__link {
 		margin-top: -4px;
 	}
 
-	& li:nth-child(1)  {
-		margin-right: 23px;
-		margin-left: 10px;
-	}
-	& li:nth-child(2)  {
+	 .nav__right-side__item {
 		margin-right: 20px;
-		margin-left: 23px;
-	}
-	& li:nth-child(3)  {
-		margin-right: 0px;
 		margin-left: 20px;
-		
-		& a {
+	}
 
-			padding-left: 40px;
+	
+	.nav__right-side__item:last-child  {
+		margin-right: 0px;
+	}
 
-			background: url('../img/burger.png') 0 0px no-repeat;
+	.burger {
+		padding-left: 40px;
 
-		}
+		background: url('../img/burger.png') 0 0px no-repeat;
 	}
 
 
@@ -136,16 +131,13 @@
 	text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 	color: @aqua-color;
 
-	& span {
+	.banner__span {
 		font-size: 58px;
 		line-height: 1;
 		color: #ffffff;
 	}
 
-	& a {
-		color: @aqua-color;
-		transition: all 0.15s linear 0s;
-	}
+	
 
 /* 	& a:hover {
 	text-decoration: underline;
@@ -164,16 +156,12 @@
 	text-align: center;
 	text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 
-	& a {
+	 .banner__string {
 		font-family: @maven-bold-font;
 		font-weight: bold;
 		color: @aqua-color;
-		transition: all 0.15s linear 0s;
 	}
 
-	/* & a:hover {
-		text-decoration: underline;
-	} */
 }
 
 .banner__button-wr {
@@ -199,7 +187,7 @@
 }
 
 .button:hover {
-	transform: scale(1.2);
+	opacity: 0.8;
 }
 
 .banner__button {

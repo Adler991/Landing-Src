@@ -46,21 +46,19 @@
 
 	display: flex;
 
-	& li {
+	font-family: @maven-bold-font;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 1.18;
+	color: #ffffff;
+
+	& .social-links__item {
 		margin-right: 10px;
 		// transition: all 0.15s linear 0s;
 	}
 
-	& li:first-child {
-		
-		font-family: @maven-bold-font;
-		font-weight: bold;
-		font-size: 22px;
-		line-height: 1.18;
-		color: #ffffff;
-	}
 
-	& a {
+	& .social-links__link {
 		display: block;
 		width: 30px;
 		height: 30px;
@@ -70,17 +68,17 @@
 		
 	}
 
-	& li:hover a {
+	& .social-links__item:hover .social-links__link {
 		margin-top: -4px;
 	}
 
-	& li:nth-child(2) a {
+	& .social-links__link-fb  {
 		background-image: url('../img/icons/fb.png');
 	}
-	& li:nth-child(3) a {
+	& .social-links__link-tw  {
 		background-image: url('../img/icons/tw.png');
 	}
-	& li:nth-child(4) a {
+	& .social-links__link-in  {
 		background-image: url('../img/icons/in.png');
 	}
 

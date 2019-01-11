@@ -15,7 +15,7 @@
 }
 
 
-
+// Large devices (desktops)
 @media only screen and (max-width: 1200px) {
 	.work .center {
 		flex-direction: column;
@@ -39,10 +39,7 @@
 	.work--wr {
 		text-align: center;
 	}
-}
-
-
-@media only screen and (max-width: 1150px) {
+	
 	.preferences {
 		padding: 60px 0;
 
@@ -79,9 +76,6 @@
 			margin-bottom: 30px;
 		}
 	}
-}
-
-@media only screen and (max-width: 1100px) {
 
 	.footer {
 
@@ -106,27 +100,18 @@
 
 	.footer-center {
 		padding-left: 30px;
-	} 	
+	} 
+
+	.preferences__button-wr {
+		text-align: center;
+	}		
 
 }
 
 
-@media only screen and (max-width: 1000px) {
-	.work {
-		.info {
-			&__item {
-				align-self: center;
-			}
+// Medium devices (tablets)
 
-			&__item:nth-child(2n) {
-				align-self: center;
-			}
-		}
-	}
-}
-
-
-@media only screen and (max-width: 950px) { 
+@media only screen and (max-width: 992px) { 
 	.logo-wr {
 		margin-right: ~"calc(100% - 260px)";
 		margin-bottom: 20px;
@@ -141,10 +126,7 @@
 			width: 50%;
 		}
 	}
-}
 
-
-@media only screen and (max-width: 900px) {
 	.preferences__title {
 		margin-bottom: 30px;
 	}
@@ -153,22 +135,18 @@
 		margin-bottom: 35px;
 	}
 
-	.preferences__button-wr {
-		text-align: center;
-	}		
-
-}
-
-
-@media only screen and (max-width: 850px) {
 	.work  {
 		
 		.info {
 			&__item:nth-child(odd)::after { 
 				display: none;
 			}
-			&__item:nth-child(2)::after {
+			&__item:nth-child(even)::after {
 				display: none;
+			}
+
+			&__item {
+				align-self: center;
 			}
 		}
 
@@ -180,6 +158,8 @@
 		&__title {
 			text-align: center;
 		}
+
+		
 
 		&__left-side {
 			max-width: 600px;
@@ -200,11 +180,6 @@
 			text-align: center;
 		}
 
-
-		.info__item:nth-child(2n) {
-			margin-bottom: 90px;
-		}
-
 		.info__item {
 			margin-bottom: 90px;
 		}
@@ -217,18 +192,17 @@
 
 
 
-	}
+	}	
 }
 
-@media only screen and (max-width: 750px) {
+// Small devices (landscape phones)
+
+@media only screen and (max-width: 768px) {
 	.work__title{
 		font-size: 45px;
 	}
 	
-}
 
-
-@media only screen and (max-width: 650px) {
 	.banner {
 		padding-bottom: 60px;
 	}
@@ -265,13 +239,11 @@
 
 		align-items: center;
 	}
-	
-}
 
-
-@media only screen and (max-width: 640px) {
 	.section-title {
 		line-height: 1.5;
 	}
+	
 }
+
 
